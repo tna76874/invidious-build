@@ -34,8 +34,8 @@ jobs:
           CURRENT_DATE=$(date +'%Y%m%d')
           CURRENT_DATE_WITH_HOUR=$(date +'%Y%m%d%H')
           IMAGE_NAME="ghcr.io/${{ github.repository }}"
-          DOCKERFILE_CONTEXT ="docker/Dockerfile"
-          
+          DOCKERFILE_CONTEXT="docker/Dockerfile"
+
           cd build
 
           # Build image for master branch
