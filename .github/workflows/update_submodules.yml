@@ -14,8 +14,7 @@ jobs:
 
       - name: Update submodules
         run: |
-          git submodule update --init --recursive
-          git submodule update --recursive --remote
+          bash update.sh
           if ! git diff-index --quiet HEAD --; then
             git config --global user.email "Buildbot@local"
             git config --global user.name "Build Bot"
